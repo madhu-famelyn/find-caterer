@@ -3,8 +3,8 @@ import "./LoginPopup.css";
 
 import userIcon from "../../Assets/Login/User Icon 1.png";
 import catererIcon from "../../Assets/Login/Caterer Icon.png"; 
-import RegisterCatererPopup from "../RegisterCatererPopup/RegisterCatererPopup";
-import UserRegisterPopup from "../RegisterUserPopup/RegisterUserPopup";
+// import RegisterCatererPopup from "../RegisterCatererPopup/RegisterCatererPopup";
+// import UserRegisterPopup from "../RegisterUserPopup/RegisterUserPopup";
 import UserLoginPopup from "../UserLoginPopup/UserLoginPopup";
 
 import CatererLoginPopup from "../CatererLoginPopup/CatererLoginPopup";
