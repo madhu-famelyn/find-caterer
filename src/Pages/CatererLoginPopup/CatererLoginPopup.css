@@ -1,0 +1,154 @@
+
+
+/* ================= OVERLAY ================= */
+.caterer-login-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1200;
+}
+
+/* ================= POPUP ================= */
+.caterer-login-popup {
+  width: 420px;
+  border-radius: 22px;
+  overflow: hidden;
+
+  background: linear-gradient(180deg, #ffd2a6 0%, #ffffff 55%);
+  border: 4px solid transparent;
+  border-image: linear-gradient(180deg, #ffffff 0%, #ff8a00 100%) 1;
+
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ================= HEADER ================= */
+.caterer-login-header {
+  padding: 26px 20px 18px;
+  text-align: center;
+}
+
+.caterer-image-wrapper {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #ff8a00;
+  margin: 0 auto 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caterer-image-wrapper img {
+  width: 44px;
+  height: 44px;
+}
+
+.caterer-login-header h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #444;
+}
+
+.caterer-login-header h2 span {
+  color: #ff8a00;
+}
+
+.caterer-login-header p {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* ================= BODY ================= */
+.caterer-login-body {
+  padding: 26px 24px 24px;
+  background: linear-gradient(90deg, #ffffff 0%, #fff1e6 100%);
+}
+
+/* ================= INPUTS ================= */
+.input-group {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.input-group input {
+  width: 100%;
+  height: 46px;
+  padding: 0 42px 0 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-group input::placeholder {
+  color: #aaa;
+}
+
+.input-group input:focus {
+  border-color: #ff8a00;
+}
+
+/* ICON */
+.input-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #999;
+}
+
+.input-icon.clickable {
+  cursor: pointer;
+}
+
+/* ================= FORGOT ================= */
+.forgot-password {
+  text-align: right;
+  font-size: 13px;
+  color: #ff8a00;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* ================= BUTTON ================= */
+.caterer-login-btn {
+  width: 100%;
+  height: 46px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(0deg, #ff7a00 0%, #ff9a2e 100%);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+
+  box-shadow: 0px 4px 10px rgba(255, 138, 0, 0.4);
+}
+
+.caterer-login-btn:hover {
+  opacity: 0.95;
+}
+
+/* ================= REGISTER TEXT ================= */
+.register-text {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+}
+
+.register-text span {
+  color: #ff8a00;
+  cursor: pointer;
+  margin-left: 4px;
+  font-weight: 500;
+}

@@ -1,0 +1,238 @@
+.main-content {
+  flex: 1;
+  padding: 28px;
+  background: #fafafa;
+}
+
+/* Welcome Card */
+.welcome-card {
+ background: linear-gradient(90deg, #FEF2EA 0%, #FFFFFF 100%);
+ border: 1px solid #F0E2E3;
+  border-radius: 18px;
+  padding: 2px 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 257px;
+}
+
+.welcome-text h2 {
+font-weight: 600;
+font-style: SemiBold;
+font-size: 40px;
+line-height: 100%;
+letter-spacing: 0%;
+
+
+}
+
+.welcome-text p {
+font-weight: 300;
+margin-left: 10vh;
+font-style: Light;
+font-size: 26px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #654E4E;
+
+}
+
+.welcome-card img {
+  width: 392;
+height: 257;
+opacity: 1;
+top: 145px;
+left: 840px;
+border-radius: 16px;
+
+}
+
+/* Section */
+.section-title {
+  margin: 30px 0 16px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Stats */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.stat-card {
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.stat-card.green {
+  position: relative;
+  text-align: left; /* override center */
+}
+
+/* Icon top-left */
+.stat-card.green img {
+  width: 44px;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+/* Number top-right */
+.stat-card.green h2 {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* Text bottom-left */
+.stat-card.green p {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  margin: 0;
+  font-size: 16px;
+}
+
+
+.stat-card img {
+  width: 40px;
+  margin-bottom: 8px;
+}
+
+.stat-card h2 {
+  margin: 6px 0;
+  font-size: 26px;
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.stat-card.green {
+  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #F9FFF4 100%);
+  border: 1px solid #DFDFDF;
+  color: #377B00;
+}
+
+.stat-card.orange {
+  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #FFEEE6 100%);
+border: 1px solid #DFDFDF;
+  color: #974533;
+}
+
+.stat-card.white {
+  background: #ffffff;
+  border: 1px solid #eee;
+}
+
+/* Progress Ring */
+.progress-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.progress-ring {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 6px solid #ff8a1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Enquiry Card */
+.enquiry-card {
+  margin-top: 28px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+}
+
+.enquiry-left {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #ff7a00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar img {
+  width: 26px;
+}
+
+.enquiry-info h4 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.party-type {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.meta {
+  display: flex;
+  gap: 14px;
+  font-size: 13px;
+  color: #777;
+  margin-top: 6px;
+}
+
+/* Right */
+.enquiry-right {
+  text-align: right;
+}
+
+.badge {
+  background: #ffe7d6;
+  color: #ff7a00;
+  padding: 4px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+.actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.btn-outline {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, #ff8a1f, #ff6a00);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}

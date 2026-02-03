@@ -1,0 +1,101 @@
+/* src/components/CategorySelectors/CategorySelectors.css */
+
+.category-section {
+  padding: 60px 20px;
+}
+
+.category-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* ===================== */
+/* CARD */
+/* ===================== */
+
+.category-card {
+  /* REMOVE DEFAULT BUTTON STYLES */
+  background-color: transparent;
+  appearance: none;
+
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  min-height: 170px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 18px;   /* ✅ Radius applied */
+  overflow: hidden;      /* ✅ THIS IS THE KEY */
+}
+
+
+/* Remove focus ring */
+.category-card:focus {
+  outline: none;
+}
+
+/* INNER CONTENT */
+.category-card-content {
+  width: 100%;
+  height: 100%;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Selector image */
+.category-card-content img {
+  width: 130px;
+  height: auto;
+  margin-bottom: 14px;
+}
+
+/* Title */
+.category-card-content span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c2c2c;
+  text-align: center;
+}
+
+/* Hover */
+.category-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+@media (max-width: 992px) {
+  .category-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .category-container {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card {
+    min-height: 160px;
+  }
+
+  .category-card-content img {
+    width: 74px;
+  }
+}

@@ -1,0 +1,135 @@
+.event-cta {
+  background-image: url("../../../Assets/ProfilePage/CTA-Background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 12px;
+  padding: 36px 20px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+
+.event-cta h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* BUTTON GROUP */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* COMMON BUTTON */
+.cta-btn {
+  min-width: 160px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* PRIMARY BUTTON */
+.cta-btn.primary {
+  background: linear-gradient(180deg, #ff5400 0%, #d34a38 100%);
+  color: #fff;
+  /* border: 3px solid #eba045; */
+}
+
+.cta-btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(211, 74, 56, 0.35);
+}
+
+/* SECONDARY BUTTON */
+.cta-btn.secondary {
+  background: #fff;
+  color: #ff5400;
+  border: 3px solid #eba045;
+}
+
+.cta-btn.secondary:hover {
+  background: #fff7ef;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-btn {
+    width: 100%;
+  }
+}
+
+.cta-loader-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ddd;
+  border-top-color: #000;
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* CONFIRM POPUP OVERLAY */
+.cta-confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* POPUP BOX */
+.cta-confirm-box {
+  background: #fff;
+  padding: 24px;
+  width: 380px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.cta-confirm-box h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.cta-confirm-box p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* ACTIONS */
+.cta-confirm-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}

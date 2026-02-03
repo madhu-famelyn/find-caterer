@@ -1,0 +1,151 @@
+/* src/components/Hero/HeroSection.css */
+
+.hero-section {
+  width: 100%;
+  min-height: 70vh;
+  background: url("../../../Assets/LandingPage/HeroBackgrounImg.png")
+    no-repeat center center / cover;
+}
+
+/* Gradient overlay */
+.hero-section__overlay {
+  width: 100%;
+  min-height: 20vh;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 228, 210, 0.95) 0%,
+    rgba(255, 255, 255, 0.86) 52%,
+    rgba(255, 255, 255, 0.75) 62%,
+    rgba(255, 255, 255, 0.5) 80%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Content wrapper */
+.hero-section__content {
+  max-width: 1200px;
+  padding: 70px 20px 80px;
+  margin-right: auto;
+}
+
+/* Headings */
+.hero-section__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2c2c2c;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.hero-section__subtitle {
+  font-size: 18px;
+  color: #555;
+  max-width: 520px;
+  margin-bottom: 36px;
+}
+
+/* Search container */
+.hero-search {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 12px;
+  max-width: 720px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Search fields */
+.hero-search__field {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 0 14px;
+}
+
+.hero-search__input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  width: 100%;
+}
+
+/* Location icon */
+.hero-search__icon {
+  color: #ef5936;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* Divider */
+.hero-search__divider {
+  width: 1px;
+  height: 34px;
+  background-color: #e0e0e0;
+}
+
+/* Button */
+.hero-search__button {
+  background-color: #ef5936;
+  color: #ffffff;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+  }
+
+  .hero-section__overlay {
+    min-height: auto;
+  }
+
+  .hero-section__content {
+    padding: 80px 20px 60px;
+  }
+
+  .hero-section__title {
+    font-size: 34px;
+  }
+
+  .hero-search {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .hero-search__divider {
+    display: none;
+  }
+
+  .hero-search__button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section__content {
+    padding: 60px 16px 50px;
+  }
+
+  .hero-section__title {
+    font-size: 28px;
+  }
+
+  .hero-section__subtitle {
+    font-size: 16px;
+  }
+}

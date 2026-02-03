@@ -1,0 +1,157 @@
+/* Success Card */
+.success-card {
+  background: #fff;
+  width: 420px;
+  max-height: 90vh;
+  border-radius: 14px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  padding: 24px 22px;          /* 🔥 consistent inner spacing */
+}
+
+/* Scrollbar */
+.success-card::-webkit-scrollbar {
+  width: 6px;
+}
+
+.success-card::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 10px;
+}
+
+/* Success Icon */
+.success-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+
+  color: #fff;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Title */
+.success-card h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #333;
+  text-align: center;
+}
+
+/* Description */
+.success-text {
+  font-size: 13.5px;
+  color: #666;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Next Steps Box */
+.next-steps {
+  background: #fff1f1;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.next-steps h4 {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Step */
+.step {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.step:last-child {
+  margin-bottom: 0;
+}
+
+.step-icon {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+/* Actions */
+.success-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;          /* 🔥 pushes buttons down neatly */
+}
+
+/* Primary Button */
+.primary-btn {
+  background: linear-gradient(90deg, #ff7a00, #ff9500);
+  color: #fff;
+  border: none;
+  padding: 11px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Secondary Button */
+.secondary-btn {
+  background: #fff;
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(#fff, #fff),
+    linear-gradient(180deg, #FD8B01 0%, #FE5401 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  color: #FE5401;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.secondary-btn:hover {
+  background-image:
+    linear-gradient(#fff7f2, #fff7f2),
+    linear-gradient(180deg, #FD8B01 0%, #FE5401 100%);
+}
+
+
+
+/* Footer Note */
+.note {
+  margin-top: 12px;
+  font-size: 11px;
+  color: #888;
+  text-align: center;
+}
+
+.success-icon img {
+  width: 92px;
+  height: 92px;
+}
+
+.step-icon img {
+  width: 32px;
+  height: 32px;
+}

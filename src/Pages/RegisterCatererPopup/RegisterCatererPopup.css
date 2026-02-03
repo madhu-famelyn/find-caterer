@@ -1,0 +1,268 @@
+/* GLOBAL FIX */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.register-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+}
+
+.register-card {
+  width: 690px;
+  max-height: 92vh;
+  background: linear-gradient(90deg, #ffffff 0%, #fce9e3 100%);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+/* Header */
+.register-header {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.register-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.register-header p {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* Body */
+.register-body {
+  padding: 22px;
+  overflow-y: auto;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 22px 0 12px;
+  color: #444;
+}
+
+/* Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+/* Force ALL grid children to behave consistently */
+.form-grid > * {
+  width: 100%;
+}
+
+/* Groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.form-group.full {
+  grid-column: span 2;
+}
+
+/* Labels */
+label {
+  font-size: 12px;
+  color: #555;
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+  background: #fff;
+  outline: none;
+  display: block;
+}
+
+/* Fix select width inconsistency */
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='12' height='12' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 9L12 15L18 9' stroke='%23999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+  padding-right: 36px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #ff6b2c;
+}
+
+/* Textarea */
+textarea {
+  resize: none;
+  height: 90px;
+}
+
+/* Helper text */
+small {
+  font-size: 11px;
+  color: #999;
+}
+
+/* Upload Section */
+.upload-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px dashed #f2b19a;
+  margin-top: 6px;
+}
+
+.upload-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #fff2eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.upload-box p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: #444;
+}
+
+.upload-box span {
+  font-size: 11px;
+  color: #888;
+}
+
+/* Upload Button */
+.upload-btn {
+  margin-left: auto;
+  background: #ff6b2c;
+  border: none;
+  color: #fff;
+  padding: 9px 16px;
+  border-radius: 9px;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.upload-btn:hover {
+  opacity: 0.9;
+}
+
+/* Capacity */
+.capacity-row {
+  display: flex;
+  gap: 10px;
+}
+
+.capacity-row input {
+  flex: 1;
+}
+
+/* Footer */
+.register-footer {
+  padding: 18px 20px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.submit-btn {
+  width: 100%;
+  background: #e83c3c;
+  color: #fff;
+  border: none;
+  padding: 13px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  opacity: 0.95;
+}
+
+.register-footer p {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #777;
+}
+
+.register-footer span {
+  color: #e83c3c;
+  cursor: pointer;
+  margin-left: 4px;
+  font-weight: 500;
+}
+
+
+/* Close Button */
+.register-card {
+  position: relative;
+}
+
+.register-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  color: #444;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.register-close-btn:hover {
+  background: #f5f5f5;
+}
+
+.upload-icon img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}

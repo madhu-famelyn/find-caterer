@@ -1,0 +1,134 @@
+.enquiries-container {
+  margin-top: 25px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+.enquiries-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.enquiries-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.enquiry-search {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Tabs */
+.enquiries-tabs {
+  display: flex;
+  gap: 20px;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.enquiries-tabs span {
+  cursor: pointer;
+  color: #777;
+}
+
+.enquiries-tabs .active {
+  color: #f74612;
+  border-bottom: 2px solid #f74612;
+  padding-bottom: 4px;
+}
+
+/* Table */
+.enquiries-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.enquiries-table th {
+  text-align: left;
+  color: #777;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.enquiries-table td {
+  padding: 14px 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 28px;
+  height: 28px;
+  background: #ffefe7;
+  color: #f74612;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Status badges */
+.status {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.status.pending {
+  background: #fff1e0;
+  color: #f2994a;
+}
+
+.status.confirmed {
+  background: #e6f4ea;
+  color: #27ae60;
+}
+
+.status.cancelled {
+  background: #ffe5e5;
+  color: #eb5757;
+}
+
+/* View button */
+.view-btn {
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.pagination span {
+  cursor: pointer;
+  color: #777;
+}
+
+.pagination .active {
+  background: #ffefe7;
+  color: #f74612;
+  padding: 2px 8px;
+  border-radius: 4px;
+}

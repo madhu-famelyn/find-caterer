@@ -1,0 +1,223 @@
+/* Page Layout */
+.listing-page {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  background: #fff6ee;
+
+  /* REQUIRED FOR STICKY */
+  align-items: flex-start;
+}
+
+/* Sidebar */
+.filter-sidebar {
+  width: 260px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+
+  /* STICKY BELOW HEADER */
+  position: sticky;
+  top: calc(72px + 24px); /* header height + page padding */
+
+  /* 🔥 INTERNAL SCROLL ENABLED */
+  max-height: calc(100vh - (72px + 48px));
+  overflow-y: auto;
+
+  /* KEEP BELOW HEADER */
+  z-index: 10;
+}
+
+/* Hide ugly scrollbar (optional but clean) */
+.filter-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.filter-sidebar::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+  border-radius: 6px;
+}
+
+/* Title */
+.filter-title {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.checkbox-row input[type="checkbox"] {
+  accent-color: #ff3d00; /* 🔥 Orange tick */
+  cursor: pointer;
+}
+
+/* Filter Sections */
+.filter-section {
+  margin-bottom: 22px;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.change-btn {
+  background: none;
+  border: none;
+  color: #ff3d00;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Location */
+.location-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  color: #555;
+}
+
+/* Checkboxes */
+.checkbox-row-ui {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Cuisine Tags */
+.cuisine-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: #f1f1f1;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.tag.active {
+  background: #ffe3cf;
+  color: #e65100;
+}
+
+/* Layout wrapper must already have display:flex */
+.fs-sidebar {
+  width: 260px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+
+  position: sticky;
+  top: calc(72px + 24px);
+  max-height: calc(100vh - (72px + 48px));
+  overflow-y: auto;
+
+  z-index: 10;
+}
+
+/* Scrollbar */
+.fs-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.fs-sidebar::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+  border-radius: 6px;
+}
+
+/* Title */
+.fs-title {
+  font-size: 18px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+/* Sections */
+.fs-section {
+  margin-bottom: 22px;
+}
+
+.fs-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fs-subtitle {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Change button */
+.fs-change-btn {
+  background: none;
+  border: none;
+  color: #ff3d00;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Location */
+.fs-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.fs-location-icon {
+  color: #e53935;
+  font-size: 18px;
+}
+
+/* ✅ CHECKBOX ROW — FIXED ALIGNMENT */
+.fs-checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  font-size: 14px;
+  color: #444;
+  cursor: pointer;
+}
+
+.fs-checkbox-row input[type="checkbox"] {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  accent-color: #ff3d00;
+  cursor: pointer;
+}
+
+/* Cuisine Tags */
+.fs-cuisine-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fs-tag {
+  background: #f1f1f1;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.fs-tag-active {
+  background: #ffe3cf;
+  color: #e65100;
+}
